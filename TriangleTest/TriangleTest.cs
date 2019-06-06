@@ -1,5 +1,6 @@
 namespace TriangleTest
 {
+    using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
@@ -47,6 +48,17 @@ namespace TriangleTest
             Assert.AreEqual(1, _triangleSolution.solution(new[] { 10, 2, 5, 8 }));
         }
 
+        [Test]
+        public void WhenExerciseArrayIsGivenAndExistsTriangle_ShouldReturnOne()
+        {
+            Assert.AreEqual(1, _triangleSolution.solution(new[] { 10, 2, 5, 1, 8, 20 }));
+        }
+
+        [Test]
+        public void WhenExerciseArrayHasBigIntegersAndExistsTriangle_ShouldReturnOne()
+        {
+            Assert.AreEqual(1, _triangleSolution.solution(new[] { 10, int.MaxValue, 5, int.MaxValue, int.MaxValue, 8, 20 }));
+        }
 
         [Test]
         public void WhenArrayHasThreeItemsWithoutTriangleOrder_ShouldReturnOne()

@@ -2,6 +2,8 @@
 
 namespace Triangle
 {
+    using System.Linq;
+
     class Program
     {
 
@@ -53,28 +55,44 @@ namespace Triangle
             if (A.Length < 3)
                 return 0;
 
-            for (int p = 0; p < A.Length; p++)
+            var array = A.OrderBy(x => (long)x).ToArray();
+
+            for (long index = 0; index < A.Length - 2; index++)
             {
-                for (int q = p + 1; q < A.Length; q++)
+                long firstSum = (long)array[index] + (long)array[index + 1];
+
+                if (firstSum > (long)array[index + 2])
                 {
-                    for (int r = q + 1; r < A.Length; r++)
-                    {
-                        long firstSum = A[p] + A[q];
-                        long secondSum = A[q] + A[r];
-                        long thirdSum = A[r] + A[p];
-
-                        if (firstSum > A[r]
-                            && secondSum > A[p]
-                            && thirdSum > A[q])
-                        {
-                            return 1;
-                        }
-
-                    }
+                    return 1;
                 }
+
             }
 
             return 0;
         }
+
+        #region old solution
+        //for (int p = 0; p < A.Length; p++)
+        //{
+        //    for (int q = p + 1; q < A.Length; q++)
+        //    {
+        //        for (int r = q + 1; r < A.Length; r++)
+        //        {
+        //            long firstSum = A[p] + A[q];
+        //            long secondSum = A[q] + A[r];
+        //            long thirdSum = A[r] + A[p];
+
+        //            if (firstSum > A[r]
+        //                && secondSum > A[p]
+        //                && thirdSum > A[q])
+        //            {
+        //                return 1;
+        //            }
+
+        //        }
+        //    }
+        //}
+
+        #endregion
     }
 }
