@@ -22,3 +22,4 @@
 16. Distinct (100 %)
 17. MaxProductOfThree (100%)
 18. Triangle (100 %)
+19. NumberOfDiscIntersections (0%)
