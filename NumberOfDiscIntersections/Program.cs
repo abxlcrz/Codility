@@ -2,6 +2,9 @@
 
 namespace NumberOfDiscIntersections
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
     #region Exercise
     /*
      * We draw N discs on a plane. The discs are numbered from 0 to N − 1. An array A of N non-negative integers, specifying the radiuses of the discs, is given. The J-th disc is drawn with its center at (J, 0) and radius A[J].
@@ -42,7 +45,7 @@ namespace NumberOfDiscIntersections
         {
             Solution sol = new Solution();
 
-            Console.WriteLine($"{sol.solution(new []{1,5,2,1,4,0})}");
+            Console.WriteLine($"{sol.solution(new[] {1, 5, 2, 1, 4, 0})}");
         }
     }
 
@@ -50,7 +53,30 @@ namespace NumberOfDiscIntersections
     {
         public int solution(int[] A)
         {
-            return 0;
+            if (A.Length < 2)
+                return 0;
+
+            Dictionary<int,int> intersects = new Dictionary<int, int>();
+
+            Dictionary<int,int> discs = new Dictionary<int, int>();
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                discs.Add(i, A[i]);
+            }
+
+            var discsBorders = discs.OrderByDescending(x => x.Value).ToList();
+
+            for (int i = 0; i < discsBorders.Count; i++)
+            {
+                var leftLimit = discsBorders[i].Key - discsBorders[i].Value;
+                var rightLimit = discsBorders[i].Key + discsBorders[i].Value;
+
+                var interElements = discs.Where(d => d.Key != i && d.Key >= leftLimit && d.Key <= rightLimit).ToList();
+                
+            }
+
+            return intersects / 2;
         }
     }
 }
