@@ -52,9 +52,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triangle", "Triangle\Triang
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriangleTest", "TriangleTest\TriangleTest.csproj", "{D6F47E64-DADD-4932-8B91-03AEF4D36791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberOfDiscIntersections", "NumberOfDiscIntersections\NumberOfDiscIntersections.csproj", "{81A37383-0B67-444E-BA1F-77B42A8919AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberOfDiscIntersections", "NumberOfDiscIntersections\NumberOfDiscIntersections.csproj", "{81A37383-0B67-444E-BA1F-77B42A8919AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberOfDiscIntersectionsTest", "NumberOfDiscIntersectionsTest\NumberOfDiscIntersectionsTest.csproj", "{5F9BB696-6166-4214-BD08-F52E06A30882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberOfDiscIntersectionsTest", "NumberOfDiscIntersectionsTest\NumberOfDiscIntersectionsTest.csproj", "{5F9BB696-6166-4214-BD08-F52E06A30882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brackets", "Brackets\Brackets.csproj", "{2BFD1E92-205E-4805-ACBD-87A8C8151BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BracketsTest", "BracketsTest\BracketsTest.csproj", "{8934D187-4D0F-4B28-9128-A04164FBE9C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -154,6 +158,14 @@ Global
 		{5F9BB696-6166-4214-BD08-F52E06A30882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F9BB696-6166-4214-BD08-F52E06A30882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F9BB696-6166-4214-BD08-F52E06A30882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFD1E92-205E-4805-ACBD-87A8C8151BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFD1E92-205E-4805-ACBD-87A8C8151BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFD1E92-205E-4805-ACBD-87A8C8151BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFD1E92-205E-4805-ACBD-87A8C8151BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8934D187-4D0F-4B28-9128-A04164FBE9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8934D187-4D0F-4B28-9128-A04164FBE9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8934D187-4D0F-4B28-9128-A04164FBE9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8934D187-4D0F-4B28-9128-A04164FBE9C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -163,6 +175,7 @@ Global
 		{672A3172-432E-47E3-9EF3-2D9FFD98D840} = {6162B491-95AB-4E4D-B609-2D5AC54AC9C1}
 		{D6F47E64-DADD-4932-8B91-03AEF4D36791} = {6162B491-95AB-4E4D-B609-2D5AC54AC9C1}
 		{5F9BB696-6166-4214-BD08-F52E06A30882} = {6162B491-95AB-4E4D-B609-2D5AC54AC9C1}
+		{8934D187-4D0F-4B28-9128-A04164FBE9C6} = {6162B491-95AB-4E4D-B609-2D5AC54AC9C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A791B54B-BA2E-4968-AA0C-EB69D24F537F}
